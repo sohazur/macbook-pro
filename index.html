@@ -18,7 +18,7 @@
   <body>
     <!-- Header Section Starts -->
     <header class="container">
-      <div class="row align-items-center mt-5 g-5">
+      <div class="row align-items-center mt-4 g-5">
         <div class="col-lg-6">
           <img class="img-fluid" src="images/mac.png" alt="iMac" />
         </div>
@@ -34,66 +34,95 @@
       </div>
     </header>
     <!-- Header Section Ends -->
-    <main>
+    <main class="container">
       <!-- Specs and delivery Selection Section -->
-      <section class="container">
-        <div>
-          <h4>Memory</h4>
-          <button>8GB unified memory</button>
-          <button>16GB unified memory</button>
-        </div>
-        <div>
-          <h4>Storage</h4>
-          <button>256GB SSD storage</button>
-          <button>512GB SSD storage</button>
-          <button>1TB SSD storage</button>
-        </div>
-        <div>
-          <h4>Choose your delivery option</h4>
-          <button>Friday, Aug 25 FREE Prime Delivery</button>
-          <button>Friday, Aug 21 Delivery charge $20</button>
+      <section class="row justify-content-end">
+        <div class="col-lg-6">
+          <div>
+            <h4>Memory</h4>
+            <button id="memory8Gb" class="btn btn-outline-secondary">
+              8GB unified memory
+            </button>
+            <button id="memory16Gb" class="btn btn-outline-secondary">
+              16GB unified memory
+            </button>
+          </div>
+          <div>
+            <h4>Storage</h4>
+            <button id="storage256Gb" class="btn btn-outline-secondary">
+              256GB SSD storage
+            </button>
+            <button id="storage512Gb" class="btn btn-outline-secondary">
+              512GB SSD storage
+            </button>
+            <button id="storage1Tb" class="btn btn-outline-secondary">
+              1TB SSD storage
+            </button>
+          </div>
+          <div>
+            <h4>Choose your delivery option</h4>
+            <button id="deliveryNormal" class="btn btn-outline-secondary">
+              Friday, Aug 25 FREE Prime Delivery
+            </button>
+            <button id="deliveryExpress" class="btn btn-outline-secondary">
+              Friday, Aug 21 Delivery charge $20
+            </button>
+          </div>
         </div>
       </section>
       <!-- Pricing and coupon section -->
-      <section class="container">
+      <section class="row justify-content-lg-end mt-5 mb-3">
         <!-- Pricing Table -->
-        <table>
-          <tr>
-            <td>Best Price</td>
-            <td>$<span id="baseCost">1299</span></td>
-          </tr>
-          <tr>
-            <td>Extra Memory Cost</td>
-            <td>$<span id="memoryCost">0</span></td>
-          </tr>
-          <tr>
-            <td>Extra Storage Cost</td>
-            <td>$<span id="storageCost">0</span></td>
-          </tr>
-          <tr>
-            <td>Delivery Charge</td>
-            <td>$<span id="deliveryCost">0</span></td>
-          </tr>
-          <tr>
-            <td>Total Price</td>
-            <td>$<span id="totalCost">1299</span></td>
-          </tr>
-        </table>
-        <!-- Promo Code -->
-        <div>
+        <div class="col-lg-6 d-block pe-5">
+          <div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Best Price</th>
+                  <td>$<span id="baseCost">1299</span></td>
+                </tr>
+                <tr>
+                  <th scope="col">Extra Memory Cost</th>
+                  <td>$<span id="memoryCost">0</span></td>
+                </tr>
+                <tr>
+                  <td>Extra Storage Cost</td>
+                  <td>$<span id="storageCost">0</span></td>
+                </tr>
+                <tr>
+                  <td>Delivery Charge</td>
+                  <td>$<span id="deliveryCost">0</span></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Total Price</td>
+                  <td>$<span id="totalCost">1299</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Promo Code -->
+      <section class="row justify-content-lg-end">
+        <div class="col-lg-6">
           <h5>Add Promo Code</h5>
-          <input type="text" />
-          <button type="submit">Apply</button>
+          <input id="promoInput" type="text" />
+          <button id="promoBtn" class="btn btn-danger" type="submit">
+            Apply
+          </button>
         </div>
       </section>
       <!-- Total Cost Section -->
-      <section class="container">
+      <section class="text-center">
         <hr />
         <h1>Total: $<span id="TotalCostAfterPromo">1299</span></h1>
       </section>
     </main>
     <!-- Footer Section Starts -->
-    <footer class="text-center">
+    <footer class="text-center mt-5">
       <p>&copy; Sohazur Islam Sozib, 2021.</p>
     </footer>
     <!-- JavaScript -->
