@@ -18,7 +18,7 @@
   <body>
     <!-- Header Section Starts -->
     <header class="container">
-      <div class="row align-items-center mt-4 g-5">
+      <div class="row align-items-center my-4 g-5">
         <div class="col-lg-6">
           <img class="img-fluid" src="images/mac.png" alt="iMac" />
         </div>
@@ -34,12 +34,13 @@
       </div>
     </header>
     <!-- Header Section Ends -->
+
     <main class="container">
       <!-- Specs and delivery Selection Section -->
       <section class="row justify-content-end">
-        <div id="specBtn" class="col-lg-6">
+        <div class="col-lg-6">
           <div>
-            <h4>Memory</h4>
+            <h4 class="mt-3">Memory</h4>
             <button id="memory8Gb" class="btn btn-outline-secondary">
               8GB unified memory
             </button>
@@ -48,7 +49,7 @@
             </button>
           </div>
           <div>
-            <h4>Storage</h4>
+            <h4 class="mt-5">Storage</h4>
             <button id="storage256Gb" class="btn btn-outline-secondary">
               256GB SSD storage
             </button>
@@ -60,7 +61,7 @@
             </button>
           </div>
           <div>
-            <h4>Choose your delivery option</h4>
+            <h4 class="mt-5">Choose your delivery option</h4>
             <button id="deliveryNormal" class="btn btn-outline-secondary">
               Friday, Aug 25 FREE Prime Delivery
             </button>
@@ -76,7 +77,7 @@
         <div class="col-lg-6 d-block pe-5">
           <div>
             <table class="table">
-              <thead id="costListing">
+              <thead>
                 <tr>
                   <th scope="col">Best Price</th>
                   <td>$<span id="baseCost">1299</span></td>
@@ -86,17 +87,17 @@
                   <td>$<span id="memoryCost">0</span></td>
                 </tr>
                 <tr>
-                  <td>Extra Storage Cost</td>
+                  <th scope="col">Extra Storage Cost</th>
                   <td>$<span id="storageCost">0</span></td>
                 </tr>
                 <tr>
-                  <td>Delivery Charge</td>
+                  <th scope="col">Delivery Charge</th>
                   <td>$<span id="deliveryCost">0</span></td>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Total Price</td>
+                  <th scope="col">Total Price</th>
                   <td>$<span id="totalCost">1299</span></td>
                 </tr>
               </tbody>
